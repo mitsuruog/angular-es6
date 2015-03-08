@@ -1,0 +1,50 @@
+{
+  "jspm": {
+    "directories": {
+      "baseURL": "client",
+      "lib": "app",
+      "packages": "client/jspm_packages"
+    },
+    "dependencies": {
+      "FezVrasta/bootstrap-material-design": "github:FezVrasta/bootstrap-material-design@^0.2.2",
+      "angular": "github:angular/bower-angular@^1.3.13",
+      "angular-resource": "npm:angular-resource@^1.3.14",
+      "angular-ui-router": "github:angular-ui/ui-router@^0.2.13",
+      "bootstrap": "github:twbs/bootstrap@^3.3.2",
+      "css": "github:systemjs/plugin-css@^0.1.6",
+      "image": "github:systemjs/plugin-image@^0.1.0",
+      "jquery": "github:components/jquery@^2.1.3",
+      "twbs/bootstrap": "github:twbs/bootstrap@^3.3.2"
+    }
+  },
+  "devDependencies": {
+    "babel": "^4.4.5",
+    "body-parser": "^1.12.0",
+    "browser-sync": "^2.2.1",
+    "browser-sync-spa": "^1.0.1",
+    "chai": "^2.0.0",
+    "chalk": "^1.0.0",
+    "del": "^1.1.1",
+    "express": "^4.12.0",
+    "gulp": "^3.8.11",
+    "gulp-babel": "^4.0.0",
+    "gulp-jshint": "^1.9.2",
+    "gulp-load-plugins": "^0.8.0",
+    "gulp-nodemon": "^1.0.5",
+    "gulp-protractor": "0.0.12",
+    "gulp-traceur": "^0.17.0",
+    "gulp-yuidoc": "^0.1.2",
+    "karma": "^0.12.31",
+    "karma-chai": "^0.1.0",
+    "karma-chrome-launcher": "^0.1.7",
+    "karma-firefox-launcher": "^0.1.4",
+    "karma-jspm": "^1.1.4",
+    "karma-mocha": "^0.1.10",
+    "karma-phantomjs-launcher": "^0.1.4",
+    "karma-sinon-chai": "^0.3.0",
+    "mocha": "^2.1.0",
+    "protractor": "^1.7.0",
+    "require-dir": "^0.1.0",
+    "systemjs": "^0.14.1"
+  }
+}

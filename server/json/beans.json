@@ -1,0 +1,91 @@
+[{
+  "id": 1,
+  "brand": "キリマンジャロ",
+  "importDate": "2015-03-12T00:00:00.000Z",
+  "region": 1,
+  "amount": 1200
+}, {
+  "id": 2,
+  "brand": "ケニア",
+  "importDate": "2015-02-10T00:00:00.000Z",
+  "region": 1,
+  "amount": 590
+}, {
+  "id": 3,
+  "brand": "モカ",
+  "importDate": "2015-01-03T00:00:00.000Z",
+  "region": 1,
+  "amount": 100
+}, {
+  "id": 4,
+  "brand": "キリマンジャロ",
+  "importDate": "2015-02-11T00:00:00.000Z",
+  "region": 1,
+  "amount": 5900
+}, {
+  "id": 5,
+  "brand": "キリマンジャロ",
+  "importDate": "2015-01-17T00:00:00.000Z",
+  "region": 1,
+  "amount": 490
+}, {
+  "id": 6,
+  "brand": "マンデリン",
+  "importDate": "2015-03-01T00:00:00.000Z",
+  "region": 2,
+  "amount": 10
+}, {
+  "id": 7,
+  "brand": "マンデリン",
+  "importDate": "2015-01-21T00:00:00.000Z",
+  "region": 2,
+  "amount": 490
+}, {
+  "id": 8,
+  "brand": "コナ",
+  "importDate": "2015-01-22T00:00:00.000Z",
+  "region": 3,
+  "amount": 470
+}, {
+  "id": 9,
+  "brand": "コナ",
+  "importDate": "2015-01-21T00:00:00.000Z",
+  "region": 3,
+  "amount": 40
+}, {
+  "id": 10,
+  "brand": "グァテマラ",
+  "importDate": "2015-03-01T00:00:00.000Z",
+  "region": 4,
+  "amount": 580
+}, {
+  "id": 11,
+  "brand": "グァテマラ",
+  "importDate": "2015-01-25T00:00:00.000Z",
+  "region": 4,
+  "amount": 1480
+}, {
+  "id": 12,
+  "brand": "コスタリカ",
+  "importDate": "2015-03-03T00:00:00.000Z",
+  "region": 4,
+  "amount": 1840
+}, {
+  "id": 13,
+  "brand": "ブラジル",
+  "importDate": "2015-01-04T00:00:00.000Z",
+  "region": 5,
+  "amount": 58390
+}, {
+  "id": 14,
+  "brand": "コロンビア",
+  "importDate": "2015-02-07T00:00:00.000Z",
+  "region": 5,
+  "amount": 480
+}, {
+  "id": 15,
+  "brand": "ブラジル",
+  "importDate": "2015-01-31T00:00:00.000Z",
+  "region": 5,
+  "amount": 4380
+}]

@@ -1,0 +1,17 @@
+{
+  "esnext": true,
+  "expr" : true,
+  "globals": {
+    "jQuery": true,
+    "angular": true,
+    "react": true,
+    "console": true,
+    "$": true,
+    "_": true,
+    "it": true,
+    "describe": true,
+    "expect": true,
+    "before": true,
+    "beforeEach": true
+  }
+}

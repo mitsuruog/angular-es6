@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head lang="ja">
+  <base href="/">
+  <meta charset="UTF-8">
+  <title>Writing AngularJS Apps Using ES6</title>
+</head>
+<body ng-app="Es6App">
+
+  <div ui-view=""></div>
+
+<script src="jspm_packages/system.js"></script>
+<script src="config.js"></script>
+<script>
+  System.import('loader').then(function(){
+    return System.import('app/app');
+  }).then(function(){
+    return System.import('bootstrap');
+  });
+</script>
+</body>
+</html>

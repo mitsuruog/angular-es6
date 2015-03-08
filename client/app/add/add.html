@@ -1,0 +1,29 @@
+<div class="container">
+
+  <ul class="breadcrumb" style="margin-bottom: 5px;">
+    <li><a href="/">入荷一覧</a></li>
+    <li class="active">入荷登録</li>
+  </ul>
+
+  <h2>入荷登録</h2>
+  <form name="addForm" novalidate ng-submit="vm.register()">
+    <div class="form-group">
+      <label for="brand">銘柄</label>
+      <input type="text" class="form-control" name="brand" ng-model="vm.bean.brand" placeholder="例）キリマンジャロ" required>
+    </div>
+    <div class="form-group">
+      <label for="region">産地</label>
+      <select class="form-control" ng-model="vm.bean.region" name="region" ng-model="vm.bean.region" ng-options="region.id as region.name for region in vm.regions"></select>
+    </div>
+    <div class="form-group">
+      <label for="amount">数量(t)</label>
+      <input type="number" class="form-control" ng-model="vm.bean.amount" name="amount" placeholder="例）100" required>
+    </div>
+    <div class="form-group">
+      <label for="importDate">入荷日</label>
+      <input type="date" class="form-control" name="importDate" ng-model="vm.bean.importDate" required>
+    </div>
+    <button type="submit" class="btn btn-warning">新規登録</button>
+  </form>
+
+</div>

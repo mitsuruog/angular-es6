@@ -1,0 +1,32 @@
+body {
+  padding-top: 70px;
+  background-image: url(/images/10141405683_1237807143_k.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+.form-control {
+  color: #333;
+}
+
+.form-control::-webkit-input-placeholder {
+  color: #5b5b5b;
+}
+.form-control::-moz-placeholder {
+  color: #5b5b5b;
+}
+.form-control:-moz-placeholder {
+  color: #5b5b5b;
+}
+.form-control:-ms-input-placeholder {
+  color: #5b5b5b;
+}
+
+.footer {
+  border-top: 1px solid #333;
+  margin-top: 14px;
+  padding: 7px 0;
+  color: #5b5b5b
+}

@@ -1,0 +1,34 @@
+<div class="container">
+
+  <ul class="breadcrumb" style="margin-bottom: 5px;">
+    <li class="active">入荷一覧</li>
+  </ul>
+
+  <h2>
+    入荷一覧
+    <a ui-sref="app.root.add()" class="btn btn-warning">新規登録</a>
+  </h2>
+
+  <div class="list-group">
+    <div ng-repeat="bean in vm.beans">
+      <div class="list-group-item">
+        <div class="row-picture">
+          <img class="circle" ng-src="{{bean.region | regionImage}}">
+        </div>
+        <div class="row-content">
+          <p class="list-group-item-text">{{bean.importDate | date:'yyyy-MM-dd'}}</p>
+          <h4 class="list-group-item-heading">{{bean.brand}}</h4>
+          <p class="list-group-item-text">
+            <span>{{bean.region | regionName:vm.regions}}</span>
+            <span amount-label data-amount="bean.amount"></span>
+          </p>
+          <div>
+            <a ui-sref="app.root.edit({id: bean.id })" class="btn btn-primary btn-raised">編集</a>
+            <a ng-click="vm.delete(bean.id)" class="btn btn-flat btn-danger">削除</a>
+          </div>
+        </div>
+      </div>
+      <div class="list-group-separator"></div>
+    </div>
+  </div>
+</div>
