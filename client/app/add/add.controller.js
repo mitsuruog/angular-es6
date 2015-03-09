@@ -4,18 +4,23 @@ export default class AddController {
     this.regions = [];
     this.bean = {};
     this.$state = $state;
-    this.BeanService = BeanService;
+    this.beanService = BeanService;
+    this.regionsService = RegionsService;
 
-    RegionsService.query().$promise.then((data) => this.regions = data);
+    this.regionsService.query().$promise.then((data) => this.regions = data);
   }
 
   register() {
-    this.BeanService.save({
+    this.beanService.save({
       brand: this.bean.brand,
       amount: this.bean.amount,
       importDate: this.bean.importDate && this.bean.importDate.toISOString(),
       region: this.bean.region
-    }).$promise.then(() => this.$state.go('app.root.list'));
+    })
+      .$promise
+      .then(() => this.$state.go('app.root.list'));
   }
 
 }
+
+AddController.$inject = ['$state', 'BeanService', 'RegionsService'];

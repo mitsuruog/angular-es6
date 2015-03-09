@@ -19,17 +19,10 @@ export var app = angular.module('Es6App', [
   'Es6AppComponents'
 ]);
 
-AppConfig.$inject = ['$locationProvider'];
-app.config(($locationProvider) => new AppConfig($locationProvider));
+app.config(AppConfig.activate);
+app.config(AppRouter.activate);
 
-AppRouter.$inject = ['$stateProvider', '$urlRouterProvider'];
-app.config(($stateProvider, $urlRouterProvider) => new AppRouter($stateProvider, $urlRouterProvider));
-
-AddController.$inject = ['$state', 'BeanService', 'RegionsService'];
+// controllers
 app.controller(AddController.name, AddController);
-
-ListController.$inject = ['BeanService', 'RegionsService'];
 app.controller(ListController.name, ListController);
-
-EditController.$inject = ['$state', '$stateParams', 'BeanService', 'RegionsService'];
 app.controller(EditController.name, EditController);

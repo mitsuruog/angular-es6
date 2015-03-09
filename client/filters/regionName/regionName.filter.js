@@ -1,8 +1,6 @@
 export default class regionName {
 
-  constructor() {}
-
-  activate() {
+  constructor() {
     return (input, regions) => {
       let regionName = '';
       angular.forEach(regions, function(region) {
@@ -10,6 +8,11 @@ export default class regionName {
       });
       return regionName;
     }
+  }
+
+  static activate(){
+    regionName.instance = new regionName();
+    return regionName.instance;
   }
 
 }

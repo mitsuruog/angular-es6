@@ -9,13 +9,15 @@ export default class regionImage {
       '49.jpg',
       '79.jpg'
     ];
-  }
-
-  activate() {
     return (input) => {
       let fileName = this.fileNames[input - 1];
       return `/images/${fileName}`;
     }
+  }
+
+  static activate(){
+    regionImage.instance = new regionImage();
+    return regionImage.instance;
   }
 
 }

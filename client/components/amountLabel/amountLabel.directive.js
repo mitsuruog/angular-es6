@@ -18,4 +18,9 @@ export default class amountLabel {
     }
   }
 
+  static activate() {
+    amountLabel.instance = new amountLabel();
+    return amountLabel.instance;
+  }
+
 }

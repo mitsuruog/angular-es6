@@ -67,4 +67,11 @@ export default class AppRouter {
 
   }
 
+  static activate($stateProvider, $urlRouterProvider) {
+    AppRouter.instance = new AppRouter($stateProvider, $urlRouterProvider);
+    return AppRouter.instance;
+  }
+
 }
+
+AppRouter.$inject = ['$stateProvider', '$urlRouterProvider'];

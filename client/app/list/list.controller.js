@@ -3,19 +3,24 @@ export default class ListController {
   constructor(BeanService, RegionsService) {
     this.beans = [];
     this.regions = [];
-    this.BeanService = BeanService;
+    this.beanService = BeanService;
+    this.regionsService = RegionsService;
 
-    BeanService.query().$promise.then((data) => this.beans = data);
-    RegionsService.query().$promise.then((data) => this.regions = data);
+    this.beanService.query().$promise.then((data) => this.beans = data);
+    this.regionsService.query().$promise.then((data) => this.regions = data);
   }
 
   delete(id) {
-    this.BeanService.delete({
+    this.beanService.delete({
         id: id
       }).$promise
       .then(() => {
-        this.BeanService.query().$promise.then((data) => this.beans = data)
+        this.beanService.query()
+          .$promise
+          .then((data) => this.beans = data)
       });
   }
 
 }
+
+ListController.$inject = ['BeanService', 'RegionsService'];

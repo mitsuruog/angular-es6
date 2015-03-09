@@ -5,8 +5,5 @@ import regionImage from './regionImage/regionImage.filter';
 
 export var  app = angular.module('Es6AppFilters', []);
 
-regionName.$inject = [];
-app.filter(regionName.name, () => new regionName().activate());
-
-regionImage.$inject = [];
-app.filter(regionImage.name, () => new regionImage().activate());
+app.filter(regionName.name, regionName.activate);
+app.filter(regionImage.name, regionImage.activate);

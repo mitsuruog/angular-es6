@@ -4,5 +4,4 @@ import amountLabel from './amountLabel/amountLabel.directive';
 
 export var app = angular.module('Es6AppComponents', []);
 
-amountLabel.$inject = [];
-app.directive(amountLabel.name, () => new amountLabel());
+app.directive(amountLabel.name, amountLabel.activate);

@@ -4,27 +4,34 @@ export default class EditController {
     this.regions = [];
     this.bean = {};
     this.$state = $state;
+    this.beanService = BeanService;
+    this.regionsService = RegionsService;
     this.id = $stateParams.id;
-    this.BeanService = BeanService;
 
-    RegionsService.query().$promise.then((data) => this.regions = data);
-    BeanService.get({
+    this.regionsService.query().$promise.then((data) => this.regions = data);
+    this.beanService.get({
       id: this.id
-    }).$promise.then((data) => {
-      data.importDate = data.importDate && new Date(data.importDate);
-      this.bean = data;
-    });
+    })
+      .$promise
+      .then((data) => {
+        data.importDate = data.importDate && new Date(data.importDate);
+        this.bean = data;
+      });
   }
 
   update() {
-    this.BeanService.update({
+    this.beanService.update({
       id: this.id
     }, {
       brand: this.bean.brand,
       amount: this.bean.amount,
       importDate: this.bean.importDate && this.bean.importDate.toISOString(),
       region: this.bean.region
-    }).$promise.then(() => this.$state.go('app.root.list'));
+    })
+      .$promise
+      .then(() => this.$state.go('app.root.list'));
   }
 
 }
+
+EditController.$inject = ['$state', '$stateParams', 'BeanService', 'RegionsService'];
